@@ -3,7 +3,7 @@
 
 Running the migrations: dart bin/migrate.dart refresh  
 
-- (POST) localhost:3000/auth/login {username, password}
-- (POST) localhost:3000/auth/register {username, email, password}
-- (POST) localhost:3000/auth/passwordCode {username, email}
-- (GET) localhost:3000/auth/me {bearerToken}
+- (POST) /auth/login {username, password}
+- (POST) /auth/register {username, email, password}
+- (POST) /auth/passwordCode {username, email}
+- (GET) /auth/me {bearerToken}
