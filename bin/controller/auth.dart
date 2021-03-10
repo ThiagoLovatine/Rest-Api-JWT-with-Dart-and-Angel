@@ -9,7 +9,7 @@ class AuthController extends Controller {
     var username = req.bodyAsMap['username'] as String;
     var password = req.bodyAsMap['password'] as String;
 
-    return res.write({username, password});
+    return {"username": username, "password": password};
   }
 
   @Expose("/register", method: "POST")
