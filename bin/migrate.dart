@@ -5,7 +5,8 @@ import 'package:postgres/postgres.dart';
 import 'migration/user.dart';
 
 var migrationRunner = PostgresMigrationRunner(
-  PostgreSQLConnection('127.0.0.1', 5432, 'angel_api'),
+  PostgreSQLConnection('localhost', 5434, 'angel_api',
+      username: 'teste123', password: 'teste123'),
   migrations: [
     UserMigration(),
   ],
